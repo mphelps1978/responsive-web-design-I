@@ -165,14 +165,9 @@ h2 {
   font-size: 1.5em;
 }
 
-/* type {
-  line-height: 20px;
-} */
-
 hr {
   border: 1px solid grey;
 }
-
 
 .container {
   width: 60%;
@@ -431,9 +426,10 @@ hr.footer {
     flex-direction: column-reverse;
   }
 
-  .nav .companyLogo{
-    width: 50%;
-    height: 50%;
+  .nav .companyLogo {
+    height: 100px;
+    width: 60%;
+
   }
 
   .menu {
@@ -465,6 +461,11 @@ hr.footer {
 
   .hero-text {
     padding-top: 10%
+  }
+
+  .middleSpacer{
+width: 90%;
+margin: 0 auto;
   }
 
   .topHalf {

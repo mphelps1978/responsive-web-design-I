@@ -421,7 +421,7 @@ hr.footer {
 
 @media (max-width: 500px) {
   .container {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -429,6 +429,11 @@ hr.footer {
   .nav {
 
     flex-direction: column-reverse;
+  }
+
+  .nav .companyLogo{
+    width: 50%;
+    height: 50%;
   }
 
   .menu {
@@ -441,45 +446,45 @@ hr.footer {
 
   .menu a {
 
-    /* width: 100%; */
     margin-right: -11%;
     margin-left: .5%;
     padding-top: 5%;
     padding-bottom: 5%;
     border-top: 1px solid black;
     text-align: center;
+    font-size: 1.5rem;
   }
 
-  .hero{
-width: 100%;
-border-top: 1px solid black;
-border-bottom: 1px solid black;
-padding-bottom:20%;
-margin-top: -10%;
+  .hero {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20%;
+    margin-top: -10%;
   }
-.hero-text{
-  padding-top: 10%
-}
+
+  .hero-text {
+    padding-top: 10%
+  }
 
   .topHalf {
     flex-direction: column;
   }
 
   .features,
-  .about {
+  .about,
+  .services,
+  .product,
+  .vision,
+  footer {
+    width: 90%;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
   .bottomHalf {
     flex-direction: column;
-  }
-
-  .services,
-  .product,
-  .vision {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
 }

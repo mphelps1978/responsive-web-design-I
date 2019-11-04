@@ -366,17 +366,27 @@ hr.footer {
   width: 45%;
 }
 
+/* END SERVICES STYLING */
+
+
+
 /* Responsive Stylings */
 
 
 /* 800px viewport */
 
 @media (max-width: 800px) {
+.container
 
   .nav {
     flex-direction: column-reverse;
   }
+
+  .header img{
+    display: hidden;
+  }
 }
+
 
 
 

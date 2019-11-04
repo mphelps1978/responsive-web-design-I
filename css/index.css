@@ -169,6 +169,10 @@ h2 {
   line-height: 20px;
 } */
 
+hr {
+  border: 1px solid grey;
+}
+
 
 .container {
   width: 60%;
@@ -270,6 +274,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 5%;
 }
 
 .address {
@@ -376,14 +381,37 @@ hr.footer {
 /* 800px viewport */
 
 @media (max-width: 800px) {
-.container
+  .container {
+    width: 90%;
+    margin: 0 auto 0;
+  }
 
   .nav {
+
     flex-direction: column-reverse;
   }
 
-  .header img{
-    display: hidden;
+  .nav img {
+    width: 30%;
+    height: 30%;
+    padding-bottom: 5%;
+    padding-top: 5%
+  }
+
+  .menu {
+    justify-content: space-around;
+    padding-right: 10%;
+    padding-bottom: 5%
+  }
+
+  .menu a {
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+
+
+  header img {
+    display: none;
   }
 }
 

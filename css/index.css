@@ -427,23 +427,59 @@ hr.footer {
   }
 
   .nav {
-    background: green;
+
     flex-direction: column-reverse;
   }
 
   .menu {
-    background: red;
+
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     text-align: center;
 
   }
 
   .menu a {
-    background: blue;
+
+    /* width: 100%; */
+    margin-right: -11%;
+    margin-left: .5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    text-align: center;
+  }
+
+  .hero{
+width: 100%;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+padding-bottom:20%;
+margin-top: -10%;
+  }
+.hero-text{
+  padding-top: 10%
+}
+
+  .topHalf {
+    flex-direction: column;
+  }
+
+  .features,
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .bottomHalf {
+    flex-direction: column;
+  }
+
+  .services,
+  .product,
+  .vision {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
 }

@@ -1,3 +1,548 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* END RESET */
+
+/* Let's set some Generic Stylings */
+
+html {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+hr {
+  border: 1px solid grey;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+/* menu styling - static across pages */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.linkStyle {
+  width: 100%;
+  margin-right: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+
+  text-decoration: none;
+  color: inherit;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.companyLogo {
+  width: 20%;
+}
+
+/* end menu styling */
+
+/* front page header content */
+header {
+
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+header .hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 5em;
+  font-family: Bangers, cursive;
+  padding-bottom: 10%;
+}
+
+.button {
+
+  text-align: center;
+  width: 50%;
+  border: 2px solid black;
+  margin-left: 25%;
+  margin-top: 8%;
+  padding: 2%;
+}
+
+/* END MAIN PAGE HEADER */
+
+/* Top Content Section */
+
+.topHalf {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.midImage {
+  width: 100%;
+}
+
+.bottomHalf {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.bottomText {
+  width: 95%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.email {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+/* END FOOTER STYLING */
+
+/* BEGIN SERVICES STYLING */
+
+.servicesPitch {
+  padding-bottom: 30px;
+}
+
+.servicesOverview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%
+}
+
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.box {
+
+  border: 2px solid black;
+  background-color: rgb(238, 237, 238);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2% 0 2% 0;
+  width: 45%;
+  height: 250px;
+  padding: 0px 20px 0px 20px;
+}
+
+.smallButton {
+  margin-top: 50px;
+  padding: 5px 40px 5px 40px;
+  background-color: #F7F7F7;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+/* END SERVICE STYLING */
+
+hr.footer {
+  border: 1px solid black;
+  height: 1px;
+  color: black;
+}
+
+/* Begin Closer Styling */
+
+.closer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.textInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.bullets {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.textInfo li {
+  list-style: disc;
+  line-height: 40px;
+
+}
+
+.closer img {
+  width: 45%;
+}
+
+/* END SERVICES STYLING */
+
+
+
+/* Responsive Stylings */
+
+
+/* 800px viewport */
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+
+  .nav {
+
+    flex-direction: column-reverse;
+  }
+
+  .nav img {
+    width: 30%;
+    height: 30%;
+    padding-bottom: 5%;
+    padding-top: 5%
+  }
+
+  .menu {
+    justify-content: space-around;
+    width: 90%;
+
+  }
+
+  .menu a {
+
+    width: 80%;
+    padding: 0;
+  }
+
+  header img {
+    display: none;
+  }
+}
+
+
+
+
+/* 500 px viewport */
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+
+    flex-direction: column-reverse;
+  }
+
+  .nav .companyLogo {
+    height: 100px;
+    width: 60%;
+
+  }
+
+  .menu {
+
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .menu a {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 20%;
+    margin-top: -4%;
+  }
+
+  .hero-text {
+    padding-top: 10%
+  }
+
+  .middleSpacer {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .topHalf {
+    flex-direction: column;
+  }
+
+  .features,
+  .about,
+  .services,
+  .product,
+  .vision,
+  footer {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .bottomHalf {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    border-top: 1px solid black;
+    padding-top: 50px;
+    margin-top: -50px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .midImage {
+    width: 95%;
+
+  }
+
+
+  .servicesIntro {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .boxContainer {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .box {
+    width: 450px;
+  }
+
+  .closer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .textInfo {
+    width: 450px;
+    padding-top: 30px;
+
+  }
+
+  .closer img {
+    width: 80%;
+  }
+
+}
